@@ -1,0 +1,86 @@
+using System;
+
+namespace variables
+{
+    internal class program
+    {
+        public static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Hello World!");
+
+            
+            Console.Write("Adınızı giriniz: ");
+            string name = Console.ReadLine();
+
+            
+            byte a = 1;
+            sbyte b = 2;
+            
+            short c = 14;
+            
+            ushort d = 12;
+            
+            int i = 1548;
+            
+            long l = 8;
+            
+            float f = 25;
+            
+            double e = 84;
+            
+            string str = string.Empty;
+            
+            bool b1 = true;
+            
+            bool b2 = false;
+            
+
+            
+            DateTime dt = DateTime.Now;
+            Console.WriteLine("şimdinin tarihi: "+dt);
+
+            
+            object x = 12;
+            
+            object y = "";
+            
+            object z = 4.3;
+            
+
+            
+            string str1 = string.Empty;
+            str1 = " ";
+            Console.WriteLine(str1);
+
+            
+
+            
+            bool bool1= 10 > 5;
+            Console.WriteLine(bool1);
+
+            
+            string sayi = "123";
+            int sayi1 = 456;
+            string newStringNumber = sayi+ sayi1.ToString();
+            Console.WriteLine("string->new number= " + newStringNumber);
+            
+            int newIntNumber = Convert.ToInt32(sayi) + sayi1;
+            Console.WriteLine("int->new number= "+newIntNumber);
+
+            
+            string datetime = DateTime.Now.ToString("dd.MM.yyyy");
+            Console.WriteLine("Date: "+datetime);
+
+            
+            string hour = DateTime.Now.ToString("HH/mm");
+            Console.WriteLine("Hour: "+hour);
+
+
+
+
+
+
+        }
+    }
+}
