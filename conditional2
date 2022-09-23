@@ -1,0 +1,69 @@
+using System;
+
+namespace
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int month = DateTime.Now.Month;
+
+            switch (month)
+            {
+                case 5:
+                    Console.WriteLine("Mayıs Ayındasınız");
+                    break;
+                case 6:
+                    Console.WriteLine("Haziran Ayındasınız");
+                    break;
+                case 7:
+                    Console.WriteLine("Temmuz Ayındasınız");
+                    break;
+                case 8:
+                    Console.WriteLine("Ağustos Ayındasınız");
+                    break;
+                case 9:
+                    Console.WriteLine("Eylül Ayındasınız");
+                    break;
+                
+                default:
+                    Console.WriteLine("Yanlış veri girildi");
+                    break;
+            }
+
+            switch (month)
+            {
+                case 3:
+                case 4:
+                case 5:
+                    Console.WriteLine("İlkbahar Mevsimi");
+                    break;
+
+                case 6:
+                case 7:
+                case 8:
+                    Console.WriteLine("Yaz Mevsimi");
+                    break;
+
+                case 9:
+                case 10:
+                case 11:
+                    Console.WriteLine("Sonbahar Mevsimi");
+                    break;
+                
+                case 12:
+                case 1:
+                case 2:
+                    Console.WriteLine("Kış Mevsimi");
+                    break;
+
+
+                default:
+                break;
+            }
+
+            Console.ReadKey();
+            
+        }
+    }
+}
