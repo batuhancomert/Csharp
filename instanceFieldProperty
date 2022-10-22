@@ -1,0 +1,56 @@
+using System;
+
+namespace Name
+{
+    class classes
+    {
+        static void Main(string[] args)
+        {
+            // Söz Dizimi
+            //class sinifAdi
+            //{
+            // [Erişim Belirleyici] [Veri Tipi] OzellikAdi;
+            // [Erişim Belirleyici] [Geri Dönüş Tipi] MetotAdi[Parametre Listesi]
+
+            // Erişim Belirleyiciler
+            // * Public: Her yerden erişilebilir.
+            // * Private:Sadece tanımlandığı sınıf içerisinden erişilebilir.
+            // * Internal:Sadece bulunduğu proje içerisinden erişilebilir
+            // * Protected:Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.
+
+            Calisan calisan1 = new Calisan();
+            calisan1.Ad = "Batuhan";
+            calisan1.Soyad = "Cömert";
+            calisan1.No = 11111111;
+            calisan1.Departman = "Non Department";
+            calisan1.CalisanBilgileri();
+
+            Console.WriteLine("*-*-*-*-*-*-*-*-*-*-*");
+
+            Calisan calisan2 = new Calisan();
+            calisan2.Ad = "Derya";
+            calisan2.Soyad = "Deniz";
+            calisan2.No = 22222222;
+            calisan2.Departman = "SoftWare Developer";
+
+            calisan2.CalisanBilgileri();
+        }
+            
+    }
+    class Calisan
+        {
+        //Properties
+        public string Ad;
+        public string Soyad;
+        public int No;
+        public string Departman;
+
+        public void CalisanBilgileri()
+        {
+            Console.WriteLine("Çalısanın Adı:{0}",Ad);
+            Console.WriteLine("Çalısanın SoyAdı:{0}",Soyad);
+            Console.WriteLine("Çalısanın Numarası:{0}",No);
+            Console.WriteLine("Çalısanın Departmanı:{0}",Departman);
+        }
+    }        
+}
