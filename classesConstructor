@@ -1,0 +1,64 @@
+using System;
+
+namespace constructor
+{
+  internal class constructorClass
+  {
+    static void Main(string[] args)
+    {
+        Console.WriteLine("*-*-*Çalışan 1*-*-*");
+        Calisan calisan1 = new Calisan("Deli","Dumrul",123456,"insan Kaynakları");
+
+        calisan1.CalisanBilgileri();
+
+        Console.WriteLine("*-*-*Çalışan 2*-*-*");
+        Calisan calisan2 = new Calisan();
+        calisan2.Ad = "Edward";
+        calisan2.Soyad ="Snowden";
+        calisan2.No = 2556464;
+        calisan2.Departman = "Satın Alma";
+
+        calisan2.CalisanBilgileri();
+
+        System.Console.WriteLine("*-*-*Çalışan 3*-*-*");
+        Calisan calisan3 = new Calisan("Batuhan","Cömert");
+
+        calisan3.CalisanBilgileri();
+    }
+  }
+  class Calisan
+  {
+    // Properties
+    public string Ad;
+    public string Soyad;
+    public int No;
+    public string Departman;
+
+    //Constructor Method Overloading
+    public Calisan (string ad,string soyad,int no,string departman)
+    {
+        this.Ad = ad;
+        this.Soyad = soyad;
+        this.No = no;
+        this.Departman = departman;
+    }
+    public Calisan(string ad,string soyad)
+    {
+        this.Ad = ad;
+        this.Soyad = soyad;
+    }
+    public Calisan()
+    {
+
+    }
+    public void CalisanBilgileri()
+    {
+        Console.WriteLine("Çalışanın Adı:{0}",Ad);
+        Console.WriteLine("Çalışanın Adı:{1}",Soyad);
+        Console.WriteLine("Çalışanın Adı:{2}",No);
+        Console.WriteLine("Çalışanın Adı:{3}",Departman);
+    }
+
+  }
+
+}
