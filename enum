@@ -12,7 +12,7 @@ namespace enums
             int sıcaklık = 32;
             if (sıcaklık <= (int)HavaDurumu.Normal)
             {
-                Console.WriteLine("Dışarıya çıkmak için havanın biraz daha sısınmasını bekleyelim");
+                Console.WriteLine("Dışarıya çıkmak için havanın biraz daha ısınmasını bekleyelim");
             }
             else if(sıcaklık>=(int)HavaDurumu.Sıcak)
                 Console.WriteLine("Dışarıya çıkmak için çok sıcak");
